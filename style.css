@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #f5f5f5; /*change*/
+    color: #010005e9; /*change*/
+}
+body, button, input, select, textarea {
+    font-family: 'DM Sans', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+@media (min-width:860px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+header {
+    padding: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+section {
+    background-color: rgba(255, 255, 255, 0.8); /*change*/
+    border: 1px solid #e0e0e0;  /*change*/
+    border-radius: 12px;
+    padding: 18px;
+}
+.card {
+    background-color: #f5f5f5; /*change*/
+    padding: 14px;
+    border-radius: 8px;
+    margin: 16px 0 16px 0;    
+}
+input, select, textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc; /*change*/
+    border-radius: 8px;
+}
+label {
+    display: block;
+    margin-top: 12px; /*change*/
+}
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.card button {
+    padding: 6px 12px;
+    margin-top: 0;
+}
+button:hover {
+    background-color: #e0e0e0; /*change*/
+}
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #5b3df5; /*change*/
+    outline-offset: 2px;
+}
+
+button:focus { /*change*/
+    outline: 2px solid #5b3df5; 
+    outline-offset: 2px;
+}
