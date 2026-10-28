@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Vault</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Prompt Vault</h1>
+        <p>Pick a template, fill in the [variables], and copy a ready-to-use AI prompt. Save your favorites to find them again in seconds.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Prompt builder</h2>
+
+            <label for="template">Template :</label>
+            <select id="template">
+                <option value="">Select a template ...</option>
+                <option value="explain">Explain a topic</option>
+                <option value="debug">Debug my code</option>
+                <option value="resume">Resume bullet points</option>
+                <option value="blog">Blog post outline</option>
+            </select>
+
+            <label for="promptOutput">Prompt :</label>
+            <textarea id="promptOutput" placeholder="Your prompt will appear here..."></textarea>
+
+            <div id="vars"></div>
+
+            <label for="promptTitle">Prompt Title:</label>
+            <input type="text" id="promptTitle" placeholder="Enter a title for your prompt">
+
+            <label for="category">Category :</label>
+            <select id="category">
+                <option value="">Select a Category...</option>
+                <option value="coding">Coding</option>
+                <option value="study">Study</option>
+                <option value="resume">Resume</option>
+                <option value="content">Content writing</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="button" id="copyBtn">Copy Prompt</button>
+            <button type="button" id="saveBtn">Save Prompt</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+        </section>
+        <section>
+            <h2>Your vault</h2>
+
+            <label for="searchVault">Search Prompts:</label>
+            <input type="search" id="searchVault" placeholder="Search prompts...">
+
+            <div id="list"></div>
+            
+            <div class="card">
+                <h3>Beginner explainer</h3>
+                <small>Study</small>
+                <p>Explain JavaScript in English for a beginner.</p>
+                <button>Copy</button>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+        </section>  
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
